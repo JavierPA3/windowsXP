@@ -1,0 +1,71 @@
+/* windows.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #008080;
+    margin: 0;
+}
+
+header {
+    display: flex;
+
+     /* Alinea los elementos al inicio del contenedor (izquierda) */
+    background-color: rgb(70, 70, 255);
+    padding: 8px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid #808080;
+}
+
+header button {
+    background-color: rgb(70, 70, 255);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+header button img {
+    justify-content: flex-start;
+    width: 20px;
+    height: 20px;
+}
+/* Contenido principal de la ventana */
+main {
+    padding: 16px;
+}
+
+/* Estilo para simular la apariencia de una ventana de Windows */
+.window {
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para simular botones de una ventana */
+.window button {
+    background-color: #f0f0f0;
+    border: 1px solid #a0a0a0;
+    padding: 6px 12px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+/* Estilo para simular el aspecto de un campo de entrada de texto */
+.window input {
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #a0a0a0;
+}
+
+/* Estilo para simular el aspecto de un área de texto */
+.window textarea {
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #a0a0a0;
+}
+
+/* Otros estilos según sea necesario */
+
