@@ -1,24 +1,98 @@
-<!-- popup-content.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Content</title>
     <link rel="stylesheet" href="css/windows.css">
+    <script src="js/main2.js"></script>
 </head>
+
 <body>
-    <header>
-        <button><img src="img/Minimize.png"></button>
-        <button><img src="img/Maximize.png"></button>
-        <button><img src="img/Exit.png"></button>
+    <header class="headerWindows">
+        <button id="minimizar"><img src="img/Minimize.png"></button>
+        <button id="maximizar"><img src="img/Maximize.png"></button>
+        <button id="cerrar"><img src="img/Exit.png"></button>
     </header>
+
     <main class="window">
-        <h1>Título de la Ventana</h1>
-        <p>Contenido de la ventana...</p>
-        <button>Botón</button>
-        <input type="text" placeholder="Campo de texto">
-        <textarea placeholder="Área de texto"></textarea>
+        <section class="profile">
+            <div>
+                <img src="img/yo.jpg" alt="Javier postigo">
+            </div>
+            <div>
+                <h2>Javier Postigo Arévalo</h2>
+                <p>Desarrollador de aplicaciones <strong>resolutivo</strong> y <strong>ambicioso</strong>. Interesado en
+                    adentrarme al mundo de la <i>inteligencia artificial</i> y el <i>Big Data</i>. Busco encajar en un
+                    equipo talentoso que me pueda ayudar a crecer profesionalmente.</i></p>
+            </div>
+        </section>
+        <hr>
+        <section class="sobreMiNav">
+            <ul>
+                <p><img src="img/Search for people.png"><a href="index.html"> Linkeln</a></p>
+                <p><img src="img/Phone.png" alt="">603 40 40 45</p>
+                <p><img src="img/User Accounts.png" alt="">javier.postigo.arevalo@gmail.com</p>
+                <p><img src="img/Internet Connection Wizard.png" alt="">Córdoba, Andalucía, España.</p>
+            </ul>
+        </section>
+        <hr>
+        <section class="project">
+            <h2>Skills</h2>
+            <div class="slider">
+                <article>
+                    <h3>Json</h3>
+                    <img src="img/json.png" alt="">
+                </article>
+                <article>
+                    <h3>React</h3>
+                    <img src="img/react.png" alt="">
+                </article>
+                <article>
+                    <h3>Python</h3>
+                    <img src="img/python.png" alt="">
+                </article>
+                <article>
+                    <h3>Php</h3>
+                    <img src="img/php.png" alt="">
+                </article><article>
+                    <h3>Js</h3>
+                    <img src="img/js.png" alt="">
+                </article><article>
+                    <h3>Sql</h3>
+                    <img src="img/sql.png " alt="">
+                </article>
+                <article>
+                    <h3>Html</h3>
+                    <img src="img/html.png" alt="">
+                </article>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <article>
+                <h3>Conocimientos adquiridos</h3>
+                <ul>
+                    <li>Manejo de base de datos</li>
+                    <li>Desarrollo y diseño de páginas webs.</li>
+                    <li>Depuración de código.</li>
+                    <li>Control de versiones.</li>
+                    <li>Desarrollo de aplicaciones front/back</li>
+                    <li>Conocimientos en WordPress</li>
+                </ul>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <article>
+                <h3>Formación</h3>
+                <ul>
+                    <li>Titulo Bachillerato <strong>I.E.S El Tablero</strong> (2020-2022)</li>
+                    <li>Desarrollo de aplicaciones web<strong>I.E.S Gran Capitán</strong> (2022-2024)</li>
+                </ul>
+            </article>
+        </section>
     </main>
 </body>
+
 </html>

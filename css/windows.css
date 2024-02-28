@@ -1,23 +1,26 @@
-/* windows.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #008080;
+    background: #2257D6 url(../img/1.jpg) repeat-x 0 0;
+    font-family: Tahoma, "Noto Sans", sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #fff !important;
+    color: #333;
 }
 
-header {
+.headerWindows {
     display: flex;
-
-     /* Alinea los elementos al inicio del contenedor (izquierda) */
+    justify-content: flex-end;
     background-color: rgb(70, 70, 255);
-    padding: 8px;
+    padding: 5px;
     text-align: center;
     color: white;
     border-bottom: 2px solid #808080;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-header button {
+.headerWindows button {
     background-color: rgb(70, 70, 255);
     color: white;
     border: none;
@@ -26,46 +29,148 @@ header button {
     cursor: pointer;
 }
 
-header button img {
-    justify-content: flex-start;
+.headerWindows button img {
     width: 20px;
     height: 20px;
 }
-/* Contenido principal de la ventana */
-main {
-    padding: 16px;
-}
 
-/* Estilo para simular la apariencia de una ventana de Windows */
+
 .window {
-    background-color: #ffffff;
-    border: 1px solid #808080;
+    z-index: 1000;
+    height: 50vh; /* Set height to 100% of viewport height */
+    background-color: beige;
+    border: 3px solid blue;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-/* Estilo para simular botones de una ventana */
-.window button {
-    background-color: #f0f0f0;
-    border: 1px solid #a0a0a0;
-    padding: 6px 12px;
-    margin: 8px;
-    cursor: pointer;
+.window section {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin-bottom: 20px;
 }
 
-/* Estilo para simular el aspecto de un campo de entrada de texto */
+    width: 50%;
+    width: 100%;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider article {
+    
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+
+} */
 .window input {
     padding: 8px;
     margin: 8px;
     border: 1px solid #a0a0a0;
 }
 
-/* Estilo para simular el aspecto de un área de texto */
 .window textarea {
     padding: 8px;
     margin: 8px;
     border: 1px solid #a0a0a0;
 }
 
-/* Otros estilos según sea necesario */
 
+
+
+h1 {
+    margin: 1em 0;
+    text-align: center;
+    
+}
+
+main {
+    padding: 1em;
+    overflow: auto;
+
+}
+/* */
+.profile {
+    text-align: center;
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobreMi {
+    display: flex;
+}
+.sobreMiNav {
+    display: flex;
+}
+.sobreMiNav img {
+    width: 25px;
+    height: 25px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.bio {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    padding: 1em;
+}
+.project h2 {
+    text-align: center;
+}
+.slider {
+    margin: 0vw;
+    width: 50%;
+    width: 100%;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider article {
+    
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+
+}
+.slider article h3 {
+    text-align: center;
+
+}
+
+.slider article img {
+    margin-left: 17%;
+    width: 75%;
+    height: auto;
+}
+
+.window.maximized {
+    width: 100%;
+    height: 100%;
+}
+.window article ul {
+    list-style-type: disc; /* Set the list style to a bullet point */
+    padding-left: 20px; /* Add some padding to the left for better readability */
+}
+
+.window article li {
+    margin-bottom: 5px; /* Add margin between list items if needed */
+}
