@@ -38,8 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
         setTimeout(function() {
             document.body.removeChild(overlay);
-            window.close(); // Close the current window
+            window.close();
         }, 2000);
     });
     
+    let hora = document.getElementById('hora');
+
+function actualizarHora() {
+    let horaTotal = new Date();
+    let opciones = { hour: 'numeric', minute: 'numeric', hour12: true };
+    hora.innerHTML = horaTotal.toLocaleTimeString([], opciones);
+}
+
+actualizarHora();
+
+setInterval(actualizarHora, 1000);
+
+
 });

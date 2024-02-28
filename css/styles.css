@@ -1,7 +1,7 @@
 
 main article {
     margin: 15px;
-    margin-left: -10px;
+    margin-left: -1px;
 }
 
 main article p {
@@ -14,8 +14,8 @@ main article p {
 
 main article img {
     margin-left: 20px;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
 }
 
@@ -27,18 +27,12 @@ footer {
     grid-template-columns: 1fr 1fr;
     position: fixed;
 }
-.footerDiv img {
-    position: fixed;
-    bottom: 0;
-    height: 29px;
-    width: 15%;
-}
 
 .barra {
     right: 0;
     position: fixed;
     bottom: 0;
-    width: 85%;
+    width: 75%;
     background: #2257D6 url(../img/3.png) repeat-x 0 0;
     height: 29px;
 }
@@ -49,3 +43,102 @@ body {
     font-family: Tahoma, "Noto Sans", sans-serif;
 }
 
+
+
+footer {
+    position: fixed;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+}
+.footerDiv {
+    position: fixed;
+    bottom: 0;
+    height: 29px;
+    width: 15%;
+}
+.footerDivImg {
+    position: fixed;
+    bottom: 0;
+    height: 29px;
+    width: 25%;
+}
+
+.footerDivImg2 {
+    align-self: center;
+}
+.menu-container {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    bottom: 3.9%;
+    width: 65%;
+    height: 50%;
+    display: none;
+    background-color: #faf2f2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.menu-header {
+    display: flex;
+    padding: 16px;
+    background: linear-gradient(rgb(24, 104, 206) 0%, rgb(14, 96, 203) 12%, rgb(14, 96, 203) 20%, rgb(17, 100, 207) 32%, rgb(22, 103, 207) 33%, rgb(27, 108, 211) 47%, rgb(30, 112, 217) 54%, rgb(36, 118, 220) 60%, rgb(41, 122, 224) 65%, rgb(52, 130, 227) 77%, rgb(55, 134, 229) 79%, rgb(66, 142, 233) 90%, rgb(71, 145, 235) 100%); 
+    border-top-left-radius: 10px;  
+    border-top-right-radius: 10px;
+}
+.menu-header span {
+    margin-top: 5px;
+    font-size: 15px;
+    color: white;
+}
+.menu-header img {
+    height: 25px;
+    width: 30px;
+}
+
+
+.footerDiv:hover .menu-container {
+    display: block;
+}
+
+.footerMain {
+    background-color: #faf2f2;
+}
+.footerMain section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.footerMain section article {
+    display: flex;
+    align-items: center;
+}
+
+.footerMain section article img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.footerMain section article span {
+    font-size: 5vw;
+}
+
+
+.apagarBoton {
+    margin-left: 28vw;
+}
+
+.hora {
+    bottom: -13px;
+    position: fixed;
+    margin-left: 80vw;
+    color: white;
+}

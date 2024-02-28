@@ -10,12 +10,19 @@
 
 <body>
     <header class="headerWindows">
-        <button id="minimizar"><img src="img/Minimize.png"></button>
-        <button id="maximizar"><img src="img/Maximize.png"></button>
-        <button id="cerrar"><img src="img/Exit.png"></button>
+        <div class="icono">
+            <img src="img/Certificate.png" alt="Certificate Icon">
+            <h3>Porfolio</h3>
+        </div>
+        <div class="botones">
+            <button id="minimizar"><img src="img/Minimize.png" alt="Minimize Icon"></button>
+            <button id="maximizar"><img src="img/Maximize.png" alt="Maximize Icon"></button>
+            <button id="cerrar"><img src="img/Exit.png" alt="Exit Icon"></button>
+        </div>
     </header>
+    
 
-    <main class="window">
+    <main id="ventanaEmergente" class="window">
         <section class="profile">
             <div>
                 <img src="img/yo.jpg" alt="Javier postigo">
@@ -55,10 +62,12 @@
                 <article>
                     <h3>Php</h3>
                     <img src="img/php.png" alt="">
-                </article><article>
+                </article>
+                <article>
                     <h3>Js</h3>
                     <img src="img/js.png" alt="">
-                </article><article>
+                </article>
+                <article>
                     <h3>Sql</h3>
                     <img src="img/sql.png " alt="">
                 </article>
@@ -87,10 +96,14 @@
             <article>
                 <h3>Formación</h3>
                 <ul>
-                    <li>Titulo Bachillerato <strong>I.E.S El Tablero</strong> (2020-2022)</li>
-                    <li>Desarrollo de aplicaciones web<strong>I.E.S Gran Capitán</strong> (2022-2024)</li>
+                    <li>Titulo Bachillerato <strong> I.E.S El Tablero</strong> (2020-2022)</li>
+                    <li>Desarrollo de aplicaciones web<strong> I.E.S Gran Capitán</strong> (2022-2024)</li>
                 </ul>
             </article>
+        </section>
+        <hr>
+        <section>
+            <button class="boton-cv"><a href="CV/Curriculum Javier Postigo.pdf" alt="Download Icon" download>Descargar CV</a></button>
         </section>
     </main>
 </body>
