@@ -1,9 +1,9 @@
+
 body {
     background: #2257D6 url(../img/1.jpg) repeat-x 0 0;
     font-family: Tahoma, "Noto Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff !important;
     color: #333;
 }
 
@@ -53,29 +53,42 @@ body {
 .window {
     z-index: 1000;
     height: 50vh;
-    background-color: beige;
+    background:  white url(../img/posit.webp) center/cover;
+    
     border: 3px solid blue;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    scroll-snap-type: y mandatory;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
-.window section {
-    padding: 7px;
-    flex: 0 0 100%;
-    scroll-snap-align: start;
+
+#ventanaEmergente {
+   
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+
+.window .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.window div {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-
-.slider article {
-    
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-
+.window img {
+    width: 70px;
+    height: auto;
 }
+
+.window p {
+    margin-left: 45px;
+}
+
 .window input {
     padding: 8px;
     margin: 8px;

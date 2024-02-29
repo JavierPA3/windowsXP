@@ -13,7 +13,7 @@
         justify-content: space-between;
         align-items: flex-end;
         background-color: rgb(70, 70, 255);
-        padding: 5px;
+        padding: 0px;
         text-align: center;
         color: white;
         border-bottom: 2px solid #808080;
@@ -64,6 +64,7 @@
     }
 
     .window section {
+        padding: 7px;
         flex: 0 0 100%;
         scroll-snap-align: start;
         margin-bottom: 20px;
@@ -195,8 +196,8 @@
 
     @media (min-width: 768px) and (max-width: 1199px) {
         .headerWindows .icono img {
-            width: 18px;
-            height: 18px;
+            width: 10px;
+            height: 10px;
             margin-right: 6px;
         }
     
@@ -228,17 +229,31 @@
         h1 {
             margin: 0.5em 0;
         }
-    
+        .ulNav {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vw;
+            gap: 1em;
+        }
+       
+        .sobreMiNav img {
+            width: 25px;
+            height: 25px;
+        }
         .profile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             font-size: 9px;
-            grid-template-columns: 1fr;
         }
     
         .profile img {
-            width: 100%;
-            height: auto;
+            border-radius: 0%;
+            width: 20%;
         }
-    
+        .profile p {
+            text-align: justify;
+            font-size: 20px;
+        }
         .project {
             width: 90%;
         }
@@ -249,9 +264,9 @@
     
         .slider article img {
             margin-left: 0;
-            width: 70%; /* Adjusted image width for better tablet experience */
+            width: 20%;
+            height: 20%;
         }
     
-        /* Add any additional tablet-specific styles here if needed */
     }
     

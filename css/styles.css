@@ -142,3 +142,25 @@ footer {
     margin-left: 80vw;
     color: white;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hora {
+        bottom: -13px;
+        position: fixed;
+        margin-left: 90vw;
+        color: white;
+    }
+    .footerDivImg {
+        position: fixed;
+        bottom: 0;
+        height: 29px;
+        width: 18%;
+    }
+    .barra {
+        right: 0;
+        position: fixed;
+        bottom: 0;
+        width: 82%;
+        background: #2257D6 url(../img/3.png) repeat-x 0 0;
+        height: 29px;
+    }
+}

@@ -1,10 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const openPopupButton = document.getElementById('porfolio');
+    const openPopupButton = document.getElementById('user');
+    const openPopupButton2 = document.getElementById('contacto');
     const popupContainer = document.getElementById('ventanaEmergente');
     const popupContentPlaceholder = document.getElementById('contenido');
 
     openPopupButton.addEventListener('click', function() {
         fetch('ventanaEmergente.html')
+            .then(response => response.text())
+            .then(html => {
+                popupContentPlaceholder.innerHTML = html;
+                popupContainer.style.display = 'block';
+
+                const closeButton = document.getElementById('cerrar');
+                closeButton.addEventListener('click', function() {
+                    popupContainer.style.display = 'none';
+                });
+            })
+            .catch(error => console.error(error));
+    });
+    openPopupButton2.addEventListener('click', function() {
+        fetch('rss.html')
             .then(response => response.text())
             .then(html => {
                 popupContentPlaceholder.innerHTML = html;
