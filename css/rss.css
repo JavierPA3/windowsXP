@@ -112,3 +112,100 @@ main {
     overflow: auto;
 
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        background: #2257D6 url(../img/1.jpg) repeat-x 0 0;
+        font-family: Tahoma, "Noto Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .headerWindows {
+        padding: 8px;
+    }
+
+    .headerWindows h3 {
+        font-size: 14px; 
+    }
+
+    .window {
+        height: 70vh;
+    }
+
+    #ventanaEmergente {
+        padding: 20px;
+    }
+
+    .window img {
+        width: 90px;
+    }
+
+    .window p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .window input,
+    .window textarea {
+        width: calc(100% - 16px);
+    }
+
+    h1 {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        background: #2257D6 url(../img/1.jpg) repeat-x 0 0;
+        font-family: Tahoma, "Noto Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .headerWindows {
+        padding: 16px;
+    }
+
+    .headerWindows h3 {
+        font-size: 16px; 
+    }
+
+    .window {
+        height: 40vh; 
+    }
+
+    #ventanaEmergente {
+        padding: 25px; 
+    }
+
+    .window img {
+        width: 120px;
+    }
+
+    .window p {
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .window input,
+    .window textarea {
+        width: calc(100% - 20px);
+    }
+
+    h1 {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+    }
+}

@@ -153,14 +153,87 @@ footer {
         position: fixed;
         bottom: 0;
         height: 29px;
-        width: 18%;
+        width: 15%;
     }
     .barra {
         right: 0;
         position: fixed;
         bottom: 0;
-        width: 82%;
+        width: 85%;
         background: #2257D6 url(../img/3.png) repeat-x 0 0;
         height: 29px;
+    }
+    .menu-container {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: fixed;
+        bottom: 3.5%;
+        width: 30%;
+        height: 47%;
+        display: none;
+        background-color: #faf2f2;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+    }
+    .footerMain section article span {
+        font-size: 2vw;
+    }
+    .footerMain section article img {   
+        width: 3vw;
+        height: 3vw;
+    }
+    .apagarBoton {
+        margin-left: 10vw;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .hora {
+        bottom: -13px;
+        position: fixed;
+        margin-left: 93vw;
+        color: white;
+    }
+    .footerDivImg {
+        position: fixed;
+        bottom: 0;
+        height: 29px;
+        width: 8%;
+    }
+    .barra {
+        right: 0;
+        position: fixed;
+        bottom: 0;
+        width: 92%;
+        background: #2257D6 url(../img/3.png) repeat-x 0 0;
+        height: 29px;
+    }
+    .menu-container {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: fixed;
+        bottom: 3.5%;
+        width: 18%;
+        height: 48%;
+        display: none;
+        background-color: #faf2f2;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+    }
+    .footerMain section article span {
+        font-size: 1.5vw;
+    }
+    .footerMain section article img {   
+        width: 2vw;
+        height: 2vw;
+    }
+    .apagarBoton {
+        margin-left: 10vw;
     }
 }

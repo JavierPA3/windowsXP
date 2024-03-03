@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const openPopupButton = document.getElementById('user');
     const openPopupButton2 = document.getElementById('contacto');
+    const openPopupButton3 = document.getElementById('porfolio');
     const popupContainer = document.getElementById('ventanaEmergente');
     const popupContentPlaceholder = document.getElementById('contenido');
 
@@ -33,6 +34,21 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error(error));
     });
 
+    openPopupButton3.addEventListener('click', function() {
+        fetch('porfolio.html')
+            .then(response => response.text())
+            .then(html => {
+                popupContentPlaceholder.innerHTML = html;
+                popupContainer.style.display = 'block';
+
+                const closeButton = document.getElementById('cerrar');
+                closeButton.addEventListener('click', function() {
+                    popupContainer.style.display = 'none';
+                 
+                });
+            })
+            .catch(error => console.error(error));
+    });
     document.getElementById('equipo').addEventListener('click', function() {
         let overlay = document.createElement('div');
         overlay.style.position = 'fixed';
@@ -68,6 +84,4 @@ function actualizarHora() {
 actualizarHora();
 
 setInterval(actualizarHora, 1000);
-
-
 });
